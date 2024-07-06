@@ -1,0 +1,16 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+train: ./datasets/bvn/images/train  # train images (relative to 'path') 128 images
+val: ./datasets/bvn/images/val  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# number of classes
+nc: 4
+
+# class names
+names: [ 'D00', 'D10', 'D20', 'D40']
+
+# 运行代码命令
+#python train.py --workers 0 --device 0 --epoch 100 --batch-size 32 --data data/bvn.yaml
+#  --img 640 640 --cfg cfg/training/yolov7.yaml --weights yolov7.pt --name yolov7
